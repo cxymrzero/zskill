@@ -1,0 +1,28 @@
+{
+  "name": "zskill",
+  "version": "0.1.0",
+  "description": "Multi-model reframing skills for creative problem solving and I Ching-inspired reflection.",
+  "keywords": [
+    "pi-package",
+    "agent-skills",
+    "creative-problem-solving",
+    "mental-models"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cxymrzero/zskill.git"
+  },
+  "files": [
+    "many-minds",
+    "creative-reframing",
+    "iching-reframing",
+    "README.md"
+  ],
+  "pi": {
+    "skills": [
+      "./many-minds",
+      "./creative-reframing",
+      "./iching-reframing"
+    ]
+  }
+}
