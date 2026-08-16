@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>思维模式画像</title>
+<style>
+:root{color-scheme:light;--bg:#f5f7f4;--surface:#fff;--ink:#1d2724;--muted:#66736e;--line:#dce5df;--accent:#16796b;--accent-soft:#dff1eb;--warm:#c56b3f;--shadow:0 12px 32px rgba(25,55,45,.08)}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#17201d;--surface:#202b27;--ink:#ecf3ef;--muted:#a9b8b1;--line:#3b4943;--accent:#65c6ad;--accent-soft:#234b41;--warm:#e49a72;--shadow:0 12px 32px rgba(0,0,0,.2)}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1040px;margin:0 auto;padding:36px 20px 72px}.eyebrow{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:.08em}.hero{padding:30px 0 24px;border-bottom:1px solid var(--line)}h1,h2,h3{line-height:1.25;margin:0 0 14px}h1{font-size:clamp(30px,5vw,52px);max-width:760px}h2{font-size:25px;margin-top:42px}h3{font-size:18px}.lead{font-size:19px;max-width:760px;color:var(--muted)}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.pill{border:1px solid var(--line);border-radius:999px;padding:4px 11px;color:var(--muted);font-size:13px}.summary{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:28px}.panel{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:22px;box-shadow:var(--shadow)}.panel h3{margin-bottom:10px}.clean{margin:0;padding-left:20px}.clean li+li{margin-top:7px}.chart-layout{display:block}.chart{min-height:420px;display:grid;place-items:center;position:relative}.chart svg{width:min(100%,560px);height:auto;overflow:visible}.axis-label{font-size:12px;fill:var(--muted)}.grid-line{fill:none;stroke:var(--line);stroke-width:1}.radar-fill{fill:var(--accent);fill-opacity:.2;stroke:var(--accent);stroke-width:2}.radar-dot{fill:var(--accent);cursor:help;outline:none}.radar-dot:hover,.radar-dot:focus{fill:var(--warm);stroke:var(--surface);stroke-width:4}.radar-tooltip{pointer-events:none}.radar-tooltip rect{fill:var(--ink);stroke:var(--surface);stroke-width:2}.radar-tooltip text{fill:var(--surface);font-size:12px}.radar-tooltip .tooltip-title{font-weight:800;font-size:14px}.function-accessible{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.note{color:var(--muted);font-size:14px}.function-list{display:grid;gap:12px}.function-row{border-top:1px solid var(--line);padding-top:12px}.function-head{display:flex;justify-content:space-between;gap:10px;align-items:baseline}.code{color:var(--accent);font-weight:800}.score{color:var(--muted);font-size:14px}.bar{height:8px;background:var(--line);border-radius:4px;overflow:hidden;margin:7px 0}.bar>span{display:block;height:100%;background:var(--accent);border-radius:4px}.axis-list{display:grid;gap:18px}.axis{display:grid;grid-template-columns:125px 1fr 125px;gap:12px;align-items:center}.axis-side:last-child{text-align:right}.axis-side strong{display:block}.axis-side small{display:block;color:var(--muted)}.axis-track{height:12px;background:linear-gradient(90deg,var(--accent-soft) 0 49.7%,var(--line) 49.7% 50.3%,#f5e4db 50.3%);position:relative;border-radius:6px}.axis-marker{position:absolute;top:-4px;width:20px;height:20px;border-radius:50%;background:var(--warm);border:3px solid var(--surface);box-shadow:0 0 0 1px var(--warm)}.candidate{border-left:4px solid var(--accent);padding-left:16px}.candidate+.candidate{margin-top:20px}.candidate-title{display:flex;gap:10px;align-items:baseline}.candidate-type{font-size:24px;font-weight:800}.confidence{color:var(--warm);font-size:13px;font-weight:700}.columns{display:grid;grid-template-columns:1fr 1fr;gap:18px}.subtle{background:var(--accent-soft);border-color:transparent}.warning{background:#fff4ee;border-color:#f0d5c5}@media(prefers-color-scheme:dark){.warning{background:#3b2922;border-color:#674535}}details{border-top:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-weight:700}.footer{margin-top:34px;color:var(--muted);font-size:13px}@media(max-width:720px){main{padding:24px 14px 48px}.summary,.chart-layout,.columns{grid-template-columns:1fr}.axis{grid-template-columns:94px 1fr 94px;gap:7px}.axis-side{font-size:14px}.axis-side small{font-size:12px}.panel{padding:17px}}
+@media print{body{background:#fff}.panel{box-shadow:none;break-inside:avoid}.hero{padding-top:0}main{max-width:none}.footer{display:none}.function-accessible{position:static;width:auto;height:auto;margin:16px 0 0;overflow:visible;clip:auto;white-space:normal}.function-accessible .function-row{display:block}.radar-tooltip{display:none}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="eyebrow">THINKING PATTERN INSIGHT · SAMPLE REPORT</div>
+    <h1>你倾向于先形成整体判断，再组织行动</h1>
+    <p class="lead">你通常会先理解事情的方向、结构和长期影响，再决定如何推进。面对复杂问题时，你能快速抓住主线；在目标不清楚时，则可能花较多时间继续推演。</p>
+    <div class="meta"><span class="pill">探索置信度：中等</span><span class="pill">基于多个具体情境</span><span class="pill">结果可校准</span></div>
+  </header>
+
+  <section class="summary">
+    <article class="panel"><h3>快速理解</h3><ul class="clean"><li>更容易先寻找整体方向和长期影响。</li><li>做决定前倾向检查方案是否合理、自洽。</li><li>目标明确后，行动会比探索阶段更集中。</li><li>可能需要刻意补足现场细节和及时沟通。</li></ul></article>
+    <article class="panel subtle"><h3>这份报告如何使用</h3><p>图表表示本次回答对某种思维模式的支持度，不是能力分数，也不是固定人格结论。把它当作观察自己的起点，并用后面的实验验证。</p></article>
+  </section>
+
+  <section><h2>八种思维模式</h2><div class="chart-layout"><article class="panel chart"><svg id="radar" viewBox="0 0 440 400" role="img" aria-labelledby="radar-title radar-desc"><title id="radar-title">荣格八维思维模式雷达图</title><desc id="radar-desc">悬停或聚焦雷达图上的节点，可以查看该思维模式的名称、支持度和自然语言解释。</desc></svg><p class="note">悬停或聚焦节点查看具体说明。越靠近外圈，表示本次回答中越常出现相关表现；这不表示能力高低。</p><h3>按当前支持度排序</h3><div id="function-list" class="function-accessible" aria-label="八维思维模式文字说明"></div></article></div></section>
+
+  <section><h2>四个偏好维度</h2><article class="panel"><p class="note">中心线表示平衡位置。两侧差距越大，当前偏好越明显；接近中心时，说明表现更依赖场景。</p><div id="axis-list" class="axis-list"></div></article></section>
+
+  <section><h2>类型候选</h2><article class="panel"><div class="candidate"><div class="candidate-title"><span class="candidate-type">INTJ</span><span class="confidence">当前较接近 · 中等置信度</span></div><p>这个候选主要来自：你经常先整理整体方向，再围绕一个较清晰的判断组织行动；做决定时重视结构、逻辑和长期后果。</p><p class="note">这不是唯一结论。你在探索阶段也会保留多个可能性，因此 INTP 仍是需要继续区分的候选。</p></div><div class="candidate"><div class="candidate-title"><span class="candidate-type">INTP</span><span class="confidence">竞争候选 · 中等置信度</span></div><p>如果你在大多数领域都更愿意继续分析、比较和保留开放选项，而不是围绕一个方向推进，那么这个候选可能更贴近你的实际表现。</p></div></article></section>
+
+  <section class="columns"><article><h2>可能的优势</h2><article class="panel"><ul class="clean"><li>能从零散信息中整理出主线。</li><li>会提前考虑选择的长期后果。</li><li>对逻辑漏洞和结构问题较敏感。</li></ul></article></article><article><h2>值得观察的盲点</h2><article class="panel"><ul class="clean"><li>信息不完整时可能过度推演。</li><li>容易低估具体执行细节。</li><li>形成判断后，未必会及时解释自己的推理过程。</li></ul></article></article></section>
+
+  <section><h2>一周自我验证</h2><article class="panel"><p>记录三次真实决策，并回答：</p><ol class="clean"><li>你最先注意到的是整体方向、具体事实，还是他人的反应？</li><li>你如何缩小选项？</li><li>最终推动你行动的因素是什么？</li><li>事后发现自己遗漏了什么？</li></ol></article></section>
+
+  <section><h2>术语学习区</h2><article class="panel"><details><summary><span class="code">Ni</span> · 寻找长期主线</summary><p>面对复杂信息时，尝试理解整体方向、长期影响和隐藏联系。它不等于准确预测未来，也不等于忽略现实细节。</p><p class="note">与 Ne 的区别：Ni 更容易把线索收敛成一条主线；Ne 更容易从一个线索扩展出多个可能。</p></details><details><summary><span class="code">Ne</span> · 探索多种可能</summary><p>从一个信息点扩展出多个方向、解释和替代方案。它不等于想法越多越聪明，也不等于一定不擅长执行。</p><p class="note">与 Ni 的区别：Ne 更容易保持发散；Ni 更容易寻找背后的统一方向。</p></details><details><summary><span class="code">Ti</span> · 检查逻辑自洽</summary><p>关注概念是否严密、推理是否一致、定义是否清楚。它不等于冷漠，也不等于不考虑他人。</p></details><details><summary><span class="code">Te</span> · 组织目标与效率</summary><p>关注目标、资源、流程、效率和可衡量结果。它不等于控制欲，也不等于只在乎结果。</p></details></article></section>
+
+  <p class="footer">本报告用于自我反思，不是心理诊断、能力测量或重大决策依据。报告内容可能受到场景、角色、训练和当前状态影响。</p>
+</main>
+<script>
+const functions=[
+  ['Ni','寻找长期主线',78,'较明显','从多个线索中寻找整体方向、趋势和潜在含义'],
+  ['Ne','探索多种可能',62,'较明显','从一个信息点扩展出多个方向、解释和替代方案'],
+  ['Se','关注现场与当下',36,'偶尔出现','关注眼前正在发生的事实，并根据现场变化行动'],
+  ['Si','依靠经验与细节',42,'情境依赖','重视已有经验、具体细节、稳定流程和可复用方法'],
+  ['Te','组织目标与效率',69,'较明显','关注目标、资源、流程、效率和可衡量结果'],
+  ['Fe','关注关系与氛围',55,'情境依赖','关注他人感受、群体氛围、合作关系和共同接受度'],
+  ['Fi','坚持内在价值',61,'较明显','关注个人价值、真实感、边界和内在一致性'],
+  ['Ti','检查逻辑自洽',72,'较明显','关注概念是否严密、推理是否一致、定义是否清楚']
+];
+const list=document.querySelector('#function-list');
+[...functions].sort((a,b)=>b[2]-a[2]).forEach(([code,label,score,level,desc])=>{list.insertAdjacentHTML('beforeend',`<div class="function-row"><div class="function-head"><strong><span class="code">${code}</span> · ${label}</strong><span class="score">${score} / 100 · ${level}</span></div><div class="bar"><span style="width:${score}%"></span></div><div class="note">${desc}</div></div>`)});
+const axes=[['I','内部整理',68,'E','外部互动',32,'较偏向内部整理'],['N','抽象联系',61,'S','具体事实',39,'较偏向抽象联系'],['T','逻辑分析',64,'F','关系影响',36,'较偏向逻辑分析'],['J','计划收敛',56,'P','开放探索',44,'轻微偏向计划收敛']];
+const axesEl=document.querySelector('#axis-list');
+axes.forEach(([l,ll,lv,r,rl,rv,summary])=>{const pos=lv;axesEl.insertAdjacentHTML('beforeend',`<div class="axis"><div class="axis-side"><strong>${l} · ${ll}</strong><small>${lv}%</small></div><div><div class="axis-track"><span class="axis-marker" style="left:calc(${pos}% - 10px)"></span></div><div class="note" style="text-align:center;margin-top:5px">${summary}</div></div><div class="axis-side"><strong>${r} · ${rl}</strong><small>${rv}%</small></div></div>`)})
+const svg=document.querySelector('#radar'), cx=220, cy=196, radius=132, rings=[25,50,75,100];
+const point=(i,value,r=radius)=>{const a=(-Math.PI/2)+(i/functions.length)*Math.PI*2;return [cx+Math.cos(a)*r*value/100,cy+Math.sin(a)*r*value/100]};
+const polygon=pts=>pts.map(p=>p.join(',')).join(' ');
+rings.forEach(v=>{const pts=functions.map((_,i)=>point(i,v));svg.insertAdjacentHTML('beforeend',`<polygon class="grid-line" points="${polygon(pts)}"/>`)});
+functions.forEach(([code,label],i)=>{const [x,y]=point(i,100,156);svg.insertAdjacentHTML('beforeend',`<line class="grid-line" x1="${cx}" y1="${cy}" x2="${x}" y2="${y}"/><text class="axis-label" x="${x}" y="${y}" text-anchor="middle" dominant-baseline="middle">${code}</text>`)});
+const pts=functions.map((f,i)=>point(i,f[2]));
+svg.insertAdjacentHTML('beforeend',`<polygon class="radar-fill" points="${polygon(pts)}"/>`);
+const ns='http://www.w3.org/2000/svg';
+const tooltip=document.createElementNS(ns,'g');
+tooltip.setAttribute('class','radar-tooltip');
+tooltip.setAttribute('visibility','hidden');
+tooltip.innerHTML='<rect rx="6" width="240" height="88"></rect><text class="tooltip-title" x="12" y="22"></text><text x="12" y="42"></text><text class="tooltip-desc" x="12" y="62"><tspan x="12" dy="0"></tspan><tspan x="12" dy="15"></tspan></text>';
+svg.appendChild(tooltip);
+const showTooltip=(index)=>{
+  const [code,label,score,level,desc]=functions[index];
+  const [px,py]=point(index,score,156);
+  const x=Math.max(8,Math.min(192,px-120));
+  const y=Math.max(8,Math.min(304,py-44));
+  tooltip.setAttribute('transform',`translate(${x} ${y})`);
+  tooltip.querySelector('.tooltip-title').textContent=`${code} · ${label}`;
+  tooltip.querySelectorAll('text')[1].textContent=`支持度：${score} / 100 · ${level}`;
+  const descLines=[desc.slice(0,16),desc.slice(16,32)];
+  tooltip.querySelector('.tooltip-desc').children[0].textContent=descLines[0];
+  tooltip.querySelector('.tooltip-desc').children[1].textContent=descLines[1];
+  tooltip.setAttribute('visibility','visible');
+};
+const hideTooltip=()=>tooltip.setAttribute('visibility','hidden');
+pts.forEach((p,i)=>{
+  const [code,label,score,level,desc]=functions[i];
+  const circle=document.createElementNS(ns,'circle');
+  circle.setAttribute('class','radar-dot');
+  circle.setAttribute('cx',p[0]); circle.setAttribute('cy',p[1]); circle.setAttribute('r','5');
+  circle.setAttribute('tabindex','0'); circle.setAttribute('role','button');
+  circle.setAttribute('aria-label',`${code}，${label}，支持度 ${score}，${level}。${desc}`);
+  circle.addEventListener('mouseenter',()=>showTooltip(i));
+  circle.addEventListener('mouseleave',hideTooltip);
+  circle.addEventListener('focus',()=>showTooltip(i));
+  circle.addEventListener('blur',hideTooltip);
+  svg.appendChild(circle);
+});
+</script>
+</body>
+</html>

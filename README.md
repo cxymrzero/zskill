@@ -7,6 +7,7 @@
 - `many-minds`：用户手动调用的入口，根据问题选择思考路径。
 - `creative-reframing`：用三个正交模型重构问题并生成方案。
 - `iching-reframing`：用《易经》六十四卦进行原型式重构，不作预测。
+- `thinking-pattern-insight`：通过情境访谈探索思维偏好，并生成自然语言优先的 HTML 报告。
 
 情绪引导暂不属于 MVP。ACT、CBT、斯多葛主义等方法将在安全边界、危机处理和完成标准单独设计后加入。
 
@@ -16,7 +17,7 @@
 
 ### 安装到 Claude Code、Codex 和 pi
 
-全局安装三个 skills：
+全局安装仓库中的 skills：
 
 ```bash
 npx --yes skills add cxymrzero/zskill \
@@ -49,7 +50,7 @@ $many-minds 我们的产品试用用户很多，但付费转化一直很低，�
 /skill:many-minds 我们的产品试用用户很多，但付费转化一直很低，怎样找到新解法？
 ```
 
-也可以直接调用 `creative-reframing` 或 `iching-reframing`。显式调用最可预测；允许模型调用的子 skills 也可以根据描述自动触发。
+也可以直接调用 `creative-reframing`、`iching-reframing` 或 `thinking-pattern-insight`。显式调用最可预测；允许模型调用的子 skills 也可以根据描述自动触发。
 
 更新与删除：
 
@@ -62,6 +63,7 @@ npx skills remove --global \
   --skill many-minds \
   --skill creative-reframing \
   --skill iching-reframing \
+  --skill thinking-pattern-insight \
   --yes
 ```
 
@@ -71,7 +73,7 @@ pi 用户也可以直接从 Git 安装整个 package：
 
 ```bash
 pi install git:github.com/cxymrzero/zskill
-pi install git:github.com/cxymrzero/zskill@v0.1.0  # 固定版本
+pi install git:github.com/cxymrzero/zskill@v0.2.0  # 固定版本
 ```
 
 管理 pi package：
@@ -92,7 +94,8 @@ npx --yes skills add . --list
 pi --no-skills \
   --skill ./many-minds \
   --skill ./creative-reframing \
-  --skill ./iching-reframing
+  --skill ./iching-reframing \
+  --skill ./thinking-pattern-insight
 ```
 
 
@@ -104,8 +107,8 @@ pi --no-skills \
 git add .
 git commit -m "feat: publish initial multi-model skills"
 git push origin main
-git tag v0.1.0
-git push origin v0.1.0
+git tag v0.2.0
+git push origin v0.2.0
 ```
 
 公开仓库发布前应添加明确的开源许可证。后续也可以把该 package 发布到 npm；`package.json` 已包含 `pi-package` 关键词和 pi skill manifest。

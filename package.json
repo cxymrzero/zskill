@@ -1,6 +1,6 @@
 {
   "name": "zskill",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Multi-model reframing skills for creative problem solving and I Ching-inspired reflection.",
   "keywords": [
     "pi-package",
@@ -16,13 +16,15 @@
     "many-minds",
     "creative-reframing",
     "iching-reframing",
+    "thinking-pattern-insight",
     "README.md"
   ],
   "pi": {
     "skills": [
       "./many-minds",
       "./creative-reframing",
-      "./iching-reframing"
+      "./iching-reframing",
+      "./thinking-pattern-insight"
     ]
   }
 }
